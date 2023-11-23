@@ -1,0 +1,159 @@
+@font-face{
+    font-family: 'Minecraft';
+    src: url('../assets/Minecraft.ttf');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ocultar scroll bar*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Minecraft', Arial, sans-serif;
+}
+
+
+/*Header*/
+
+header{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(46, 45, 45);
+    background-image: url(../assets/stoneblock\ oficial.png);
+    background-size: 300px;
+    width: 100vw;
+    height: 70px;
+    
+}
+
+.MCLogoImg{
+    padding-left:10px;
+    padding-top: 5px;
+    height: 140px;
+    width: 240px;
+}
+
+
+/*Nav*/
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.NavItem{
+    padding-right: 7px;
+}
+
+
+.NavImg{
+    height: 50px;
+    width: 50px;
+}
+
+#raise:hover,
+#raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+
+
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y proximity; */
+}
+
+
+
+ #section-1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3f9486;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#section-2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #660000;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#section-3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/*
+main > section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3f9486;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+main > section:nth-child(2) {
+    background: #660000;
+}
+
+main > section:nth-child(3) {
+    background: #000000;
+}
+*/
+.OW{
+    font-size: 80px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.N{
+    font-size: 80px;
+    font-weight: 700;
+    color: #e75e03;
+}
+
+.E{
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(233, 222, 160);
+}
+
+
+@media (max-width: 475px) { 
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
